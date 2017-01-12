@@ -21,4 +21,10 @@ public class AdminServices {
 		
 		return repo.findAll();
 	}
+	public List<Admin> searchId(int id){
+		return repo.findById(id);
+	}
+	public void update(Admin admin){
+		repo.save(admin);
+	}
 }
